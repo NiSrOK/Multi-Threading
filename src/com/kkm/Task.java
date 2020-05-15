@@ -23,9 +23,13 @@ class Worker extends Thread {
         public void run() {
             Handler int_hand = new Handler();
             try {
+                System.out.println(String.format("START Execute thread (IntThread): %s",
+                        this.getName()));
                 listInt = Generator.Gen(0);
                 new subIntThread(int_hand).start();
                 new subIntThread2(int_hand).start();
+                System.out.println(String.format("Execute thread (IntThread): %s",
+                        this.getName())+ " END WORK");
             } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
 
@@ -41,7 +45,11 @@ class Worker extends Thread {
         @Override
         public  void run(){
             try {
+
+                System.out.println(String.format("Execute thread (subIntThread): %s",
+                        this.getName()));
                 int_hand.getIntResultFirst(listInt);
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -55,8 +63,11 @@ class Worker extends Thread {
         @Override
         public  void run(){
             try {
+                System.out.println(String.format("Execute thread (subIntThread2): %s",
+                        this.getName()));
                 //2 -четные
                 int_hand.getIntResultSecond(listInt, 2);
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -68,10 +79,13 @@ class Worker extends Thread {
         public  void run(){
             Handler str_hand = new Handler();
             try {
+                System.out.println(String.format("START Execute thread (strThread): %s",
+                        this.getName()));
                 listStr = Generator.Gen(" ");
                 new subStrThread(str_hand).start();
                 new subStrThread2(str_hand).start();
-
+                System.out.println(String.format("Execute thread (strThread): %s",
+                        this.getName())+ " END WORK");
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (InterruptedException e) {
@@ -88,7 +102,10 @@ class Worker extends Thread {
         @Override
         public void run() {
             try {
+                System.out.println(String.format("Execute thread (subStrThread): %s",
+                        this.getName()));
                 str_hand.getStrResultFirst(listStr);
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -102,7 +119,10 @@ class Worker extends Thread {
         @Override
         public  void run(){
             try {
+                System.out.println(String.format("Execute thread (subStrThread2): %s",
+                        this.getName()));
                 str_hand.getStrResultSecond(listStr);
+
             } catch (Exception e) {
                 e.printStackTrace();
             }

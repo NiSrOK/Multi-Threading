@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17719e8d-19b6-4013-a41c-c08584670052" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Int.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Int.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Int2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Int2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Str.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Str.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/3/com/kkm/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3/com/kkm/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/3/com/kkm/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3/com/kkm/Generator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/3/com/kkm/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3/com/kkm/Handler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/3/com/kkm/Operation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3/com/kkm/Operation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/3/com/kkm/Worker$intThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3/com/kkm/Worker$intThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/3/com/kkm/Worker$strThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3/com/kkm/Worker$strThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/3/com/kkm/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3/com/kkm/Worker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3/com/kkm/Worker$subIntThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3/com/kkm/Worker$subIntThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3/com/kkm/Worker$subIntThread2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3/com/kkm/Worker$subIntThread2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3/com/kkm/Worker$subStrThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3/com/kkm/Worker$subStrThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/3/com/kkm/Worker$subStrThread2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/3/com/kkm/Worker$subStrThread2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kkm/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kkm/Handler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/kkm/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kkm/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,21 +77,21 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2609" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589531934647" />
-    <state width="1877" height="169" key="GridCell.Tab.0.bottom" timestamp="1589534882854">
+    <state width="1877" height="590" key="GridCell.Tab.0.bottom" timestamp="1589545409428">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="169" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589534882854" />
-    <state width="1877" height="169" key="GridCell.Tab.0.center" timestamp="1589534882853">
+    <state width="1877" height="590" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589545409428" />
+    <state width="1877" height="590" key="GridCell.Tab.0.center" timestamp="1589545409428">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="169" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589534882853" />
-    <state width="1877" height="169" key="GridCell.Tab.0.left" timestamp="1589534882853">
+    <state width="1877" height="590" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589545409428" />
+    <state width="1877" height="590" key="GridCell.Tab.0.left" timestamp="1589545409427">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="169" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589534882853" />
-    <state width="1877" height="169" key="GridCell.Tab.0.right" timestamp="1589534882853">
+    <state width="1877" height="590" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589545409427" />
+    <state width="1877" height="590" key="GridCell.Tab.0.right" timestamp="1589545409428">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="169" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589534882853" />
+    <state width="1877" height="590" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589545409428" />
   </component>
 </project>

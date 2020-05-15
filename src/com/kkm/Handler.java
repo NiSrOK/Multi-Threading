@@ -100,6 +100,8 @@ public class Handler implements  Operation{
 					//System.out.println(res.get(i));
 				}
 			}
+			System.out.println("Odd elements has been wiped");
+
 		}
 		else{
 			for (int i =0; i<list.size();i++){
@@ -171,7 +173,7 @@ public class Handler implements  Operation{
 		System.out.println("Number of lines: "+ line);
 		
 		for (int i=0;i<line;i++){
-			System.out.println("Word �ount in " + (i) + " line: " + res.get(i));
+			System.out.println("Word Count in " + (i) + " line: " + res.get(i));
 			S+=res.get(i);
 		}
 		System.out.println("Number of words in total: " + S);
