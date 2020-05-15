@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.Scanner;
 
-public class App extends Task_class{
+public class App{
 	public static ArrayList<Integer> listInt;
 	public static String[][] listStr;
 
