@@ -12,7 +12,7 @@ public class Generator {
 		ArrayList<Integer> Array = new ArrayList<>();
 		int z = (int)( Math.random() * 8 + 3);
 		System.out.println("Wait " + z + " seconds");
-		java.util.concurrent.TimeUnit.SECONDS.sleep(z);
+		java.util.concurrent.TimeUnit.SECONDS.sleep(0);
 		z = (int) (1 + Math.random()*40);
 		for (int i=0;i<z;i++){
 			Array.add((int) (1 + Math.random()*40));
@@ -35,7 +35,7 @@ public class Generator {
 		String[][] Array = new String[m][n];
 		int z = (int)( Math.random() * 8 + 3);
 		System.out.println("Wait " + z + " seconds");
-		java.util.concurrent.TimeUnit.SECONDS.sleep(z);
+		java.util.concurrent.TimeUnit.SECONDS.sleep(2);
 		for (int i = 0; i < Array.length; i++) {
 			for (int j = 0; j < Array[i].length; j++) {
 				z = (int)( Math.random() * 2);
