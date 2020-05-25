@@ -8,7 +8,6 @@ import java.util.concurrent.Semaphore;
 class Worker extends Thread {
     public static ArrayList<Integer> listInt;
     public static String[][] listStr;
-    public static int max_threads = 1;
     Worker(ArrayList<Integer> listInt, String[][] listStr) throws IOException, InterruptedException {
         this.listInt = listInt;
         this.listStr = listStr;
@@ -51,10 +50,11 @@ class Worker extends Thread {
         @Override
         public  void run(){
             try {
-
-                System.out.println(String.format("Execute thread (subIntThread): %s",
+                System.out.println(String.format("START Execute thread (subIntThread): %s",
                         this.getName()));
                 int_hand.getIntResultFirst(listInt);
+                System.out.println(String.format("Execute thread (subIntThread): %s",
+                        this.getName()) + " END WORK");
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -70,10 +70,12 @@ class Worker extends Thread {
         public  void run(){
             try {
                 synchronized (int_hand){
-                System.out.println(String.format("Execute thread (subIntThread2): %s",
+                System.out.println(String.format("START Execute thread (subIntThread2): %s",
                         this.getName()));
                 //2 -четные
                 int_hand.getIntResultSecond(listInt, 2);
+                    System.out.println(String.format("Execute thread (subIntThread2): %s",
+                            this.getName()) + " END WORK");
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -88,7 +90,6 @@ class Worker extends Thread {
             Handler str_hand = new Handler();
             try {
                 synchronized (str_hand) {
-
                     System.out.println(String.format("START Execute thread (strThread): %s",
                             this.getName()));
                     listStr = Generator.Gen(" ");
@@ -115,10 +116,11 @@ class Worker extends Thread {
         @Override
         public void run() {
             try {
-                System.out.println(String.format("Execute thread (subStrThread): %s",
+                System.out.println(String.format("START Execute thread (subStrThread): %s",
                         this.getName()));
                 str_hand.getStrResultFirst(listStr);
-
+                System.out.println(String.format("Execute thread (subStrThread): %s",
+                        this.getName()) + " END WORK");
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -126,7 +128,6 @@ class Worker extends Thread {
     }
     static class subStrThread2 extends Thread{
         Handler str_hand;
-        //Semaphore sem = new Semaphore(1);
         public subStrThread2(Handler str_hand) {
             this.str_hand = str_hand;
         }
@@ -134,11 +135,11 @@ class Worker extends Thread {
         @Override
         public  void run(){
             try {
-                //sem.acquire();
-                System.out.println(String.format("Execute thread (subStrThread2): %s",
+                System.out.println(String.format("START Execute thread (subStrThread2): %s",
                         this.getName()));
                 str_hand.getStrResultSecond(listStr);
-                //sem.release();
+                System.out.println(String.format("Execute thread (subStrThread2): %s",
+                        this.getName()) + " END WORK");
             } catch (Exception e) {
                 e.printStackTrace();
             }

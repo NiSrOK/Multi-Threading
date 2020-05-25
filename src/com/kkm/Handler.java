@@ -110,11 +110,6 @@ public class Handler implements  Operation{
 				}
 			}
 		}
-		
-		/*for (int i=0;i<res.size();i++){
-			System.out.println(res.get(i));
-			System.out.println("/n");
-		}*/
 				
 		return res;
 	}
@@ -134,11 +129,18 @@ public class Handler implements  Operation{
 	}
 	@Override
 	public void getStrResultFirst (String[][] list){
-		ArrayList<String> res = HandStrFirst(list); 
-		
-		System.out.println("Glued string: ");
-		for (int i=0;i<res.size();i++){
-		System.out.print(res.get(i));
+		ArrayList<String> res = HandStrFirst(list);
+
+		try(FileWriter writer = new FileWriter("GluedStr.txt", false)){
+			for (int i=0;i<res.size();i++){
+					writer.write(res.get(i));
+				}
+			writer.flush();
+			System.out.println("Glued string written to file");
+		}
+		catch(IOException ex){
+
+			System.out.println(ex.getMessage());
 		}
 	}
 	@Override
